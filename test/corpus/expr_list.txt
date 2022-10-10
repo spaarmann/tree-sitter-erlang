@@ -10,6 +10,7 @@ comprehensions
   (expr_list_comprehension
     (expr_op
       (variable)
+      (binary_op)
       (integer))
     (expr_list_generator
       (variable)
@@ -20,4 +21,5 @@ comprehensions
     (expr_list_filter
       (expr_op
         (variable)
+        (binary_op)
         (integer)))))

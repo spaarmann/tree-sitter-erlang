@@ -10,6 +10,7 @@ catch 1+2
   (expr_op
     (expr_catch
       (integer))
+    (binary_op)
     (integer)))
 
 ================================================================================
@@ -27,12 +28,14 @@ A = (catch 1+2)
     (expr_op
       (expr_catch
         (integer))
+      (binary_op)
       (integer)))
   (expr_match
     (variable)
     (expr_op
       (expr_catch
         (integer))
+      (binary_op)
       (integer))))
 
 ================================================================================

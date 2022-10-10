@@ -51,5 +51,6 @@ end
           (guard
             (expr_op
               (variable)
+              (binary_op)
               (integer)))))
       (variable))))

@@ -11,12 +11,16 @@ not A
 
 (source_file
   (expr_op
+    (unary_op)
     (expr_op
       (variable)
+      (binary_op)
       (variable)))
   (expr_op
+    (unary_op)
     (variable))
   (expr_op
+    (unary_op)
     (variable)))
 
 ================================================================================
@@ -44,72 +48,100 @@ A xor 1 xor none
   (expr_op
     (expr_op
       (variable)
+      (binary_op)
       (integer))
+    (binary_op)
     (atom))
   (expr_op
     (expr_op
       (variable)
+      (binary_op)
       (integer))
+    (binary_op)
     (atom))
   (expr_op
     (expr_op
       (variable)
+      (binary_op)
       (integer))
+    (binary_op)
     (atom))
   (expr_op
     (expr_op
       (variable)
+      (binary_op)
       (integer))
+    (binary_op)
     (atom))
   (expr_op
     (expr_op
       (variable)
+      (binary_op)
       (integer))
+    (binary_op)
     (atom))
   (expr_op
     (expr_op
       (variable)
+      (binary_op)
       (integer))
+    (binary_op)
     (atom))
   (expr_op
     (expr_op
       (variable)
+      (binary_op)
       (integer))
+    (binary_op)
     (atom))
   (expr_op
     (expr_op
       (variable)
+      (binary_op)
       (integer))
+    (binary_op)
     (atom))
   (expr_op
     (expr_op
       (variable)
+      (binary_op)
       (integer))
+    (binary_op)
     (atom))
   (expr_op
     (expr_op
       (variable)
+      (binary_op)
       (integer))
+    (binary_op)
     (atom))
   (expr_op
     (expr_op
       (variable)
+      (binary_op)
       (integer))
+    (binary_op)
     (atom))
   (expr_op
     (expr_op
       (variable)
+      (binary_op)
       (integer))
+    (binary_op)
     (atom))
   (expr_op
     (expr_op
       (variable)
+      (binary_op)
       (integer))
+    (binary_op)
     (atom))
   (expr_op
     (expr_op
       (variable)
+      (binary_op)
       (integer))
+    (binary_op)
     (atom)))
 
 ================================================================================
@@ -124,13 +156,17 @@ A -- B -- C
 (source_file
   (expr_op
     (variable)
+    (binary_op)
     (expr_op
       (variable)
+      (binary_op)
       (variable)))
   (expr_op
     (variable)
+    (binary_op)
     (expr_op
       (variable)
+      (binary_op)
       (variable))))
 
 ================================================================================
@@ -145,13 +181,19 @@ op precedence: + -
 (source_file
   (expr_op
     (integer)
+    (binary_op)
     (expr_op
+      (unary_op)
       (expr_op
+        (unary_op)
         (integer))))
   (expr_op
     (integer)
+    (binary_op)
     (expr_op
+      (unary_op)
       (expr_op
+        (unary_op)
         (integer)))))
 
 ================================================================================
@@ -189,73 +231,97 @@ A xor B
 (source_file
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable))
   (expr_op
     (variable)
+    (binary_op)
     (variable)))

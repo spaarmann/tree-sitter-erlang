@@ -12,6 +12,7 @@ comprehensions
       (bin_part
         (expr_op
           (variable)
+          (binary_op)
           (integer))))
     (expr_bitstring_generator
       (variable)
