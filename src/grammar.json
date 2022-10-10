@@ -2174,25 +2174,30 @@
             "type": "FIELD",
             "name": "operator",
             "content": {
-              "type": "CHOICE",
-              "members": [
-                {
-                  "type": "STRING",
-                  "value": "+"
-                },
-                {
-                  "type": "STRING",
-                  "value": "-"
-                },
-                {
-                  "type": "STRING",
-                  "value": "bnot"
-                },
-                {
-                  "type": "STRING",
-                  "value": "not"
-                }
-              ]
+              "type": "ALIAS",
+              "content": {
+                "type": "CHOICE",
+                "members": [
+                  {
+                    "type": "STRING",
+                    "value": "+"
+                  },
+                  {
+                    "type": "STRING",
+                    "value": "-"
+                  },
+                  {
+                    "type": "STRING",
+                    "value": "bnot"
+                  },
+                  {
+                    "type": "STRING",
+                    "value": "not"
+                  }
+                ]
+              },
+              "named": true,
+              "value": "unary_op"
             }
           },
           {
@@ -2227,105 +2232,110 @@
                 "type": "FIELD",
                 "name": "operator",
                 "content": {
-                  "type": "CHOICE",
-                  "members": [
-                    {
-                      "type": "STRING",
-                      "value": "*"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "+"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "-"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "/"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "/="
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "<"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "=/="
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "=:="
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "=<"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "=="
-                    },
-                    {
-                      "type": "STRING",
-                      "value": ">"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": ">="
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "and"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "andalso"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "band"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "bor"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "bsl"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "bsr"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "bxor"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "div"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "or"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "orelse"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "rem"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "xor"
-                    }
-                  ]
+                  "type": "ALIAS",
+                  "content": {
+                    "type": "CHOICE",
+                    "members": [
+                      {
+                        "type": "STRING",
+                        "value": "*"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "+"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "-"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "/"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "/="
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "<"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "=/="
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "=:="
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "=<"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "=="
+                      },
+                      {
+                        "type": "STRING",
+                        "value": ">"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": ">="
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "and"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "andalso"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "band"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "bor"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "bsl"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "bsr"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "bxor"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "div"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "or"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "orelse"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "rem"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "xor"
+                      }
+                    ]
+                  },
+                  "named": true,
+                  "value": "binary_op"
                 }
               },
               {
@@ -2357,21 +2367,26 @@
                 "type": "FIELD",
                 "name": "operator",
                 "content": {
-                  "type": "CHOICE",
-                  "members": [
-                    {
-                      "type": "STRING",
-                      "value": "=!"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "++"
-                    },
-                    {
-                      "type": "STRING",
-                      "value": "--"
-                    }
-                  ]
+                  "type": "ALIAS",
+                  "content": {
+                    "type": "CHOICE",
+                    "members": [
+                      {
+                        "type": "STRING",
+                        "value": "=!"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "++"
+                      },
+                      {
+                        "type": "STRING",
+                        "value": "--"
+                      }
+                    ]
+                  },
+                  "named": true,
+                  "value": "binary_op"
                 }
               },
               {

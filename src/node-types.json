@@ -3129,120 +3129,12 @@
         "required": true,
         "types": [
           {
-            "type": "*",
-            "named": false
+            "type": "binary_op",
+            "named": true
           },
           {
-            "type": "+",
-            "named": false
-          },
-          {
-            "type": "++",
-            "named": false
-          },
-          {
-            "type": "-",
-            "named": false
-          },
-          {
-            "type": "--",
-            "named": false
-          },
-          {
-            "type": "/",
-            "named": false
-          },
-          {
-            "type": "/=",
-            "named": false
-          },
-          {
-            "type": "<",
-            "named": false
-          },
-          {
-            "type": "=!",
-            "named": false
-          },
-          {
-            "type": "=/=",
-            "named": false
-          },
-          {
-            "type": "=:=",
-            "named": false
-          },
-          {
-            "type": "=<",
-            "named": false
-          },
-          {
-            "type": "==",
-            "named": false
-          },
-          {
-            "type": ">",
-            "named": false
-          },
-          {
-            "type": ">=",
-            "named": false
-          },
-          {
-            "type": "and",
-            "named": false
-          },
-          {
-            "type": "andalso",
-            "named": false
-          },
-          {
-            "type": "band",
-            "named": false
-          },
-          {
-            "type": "bnot",
-            "named": false
-          },
-          {
-            "type": "bor",
-            "named": false
-          },
-          {
-            "type": "bsl",
-            "named": false
-          },
-          {
-            "type": "bsr",
-            "named": false
-          },
-          {
-            "type": "bxor",
-            "named": false
-          },
-          {
-            "type": "div",
-            "named": false
-          },
-          {
-            "type": "not",
-            "named": false
-          },
-          {
-            "type": "or",
-            "named": false
-          },
-          {
-            "type": "orelse",
-            "named": false
-          },
-          {
-            "type": "rem",
-            "named": false
-          },
-          {
-            "type": "xor",
-            "named": false
+            "type": "unary_op",
+            "named": true
           }
         ]
       },
@@ -6545,23 +6437,11 @@
     "named": false
   },
   {
-    "type": "+",
-    "named": false
-  },
-  {
-    "type": "++",
-    "named": false
-  },
-  {
     "type": ",",
     "named": false
   },
   {
     "type": "-",
-    "named": false
-  },
-  {
-    "type": "--",
     "named": false
   },
   {
@@ -6585,10 +6465,6 @@
     "named": false
   },
   {
-    "type": "/=",
-    "named": false
-  },
-  {
     "type": ":",
     "named": false
   },
@@ -6602,10 +6478,6 @@
   },
   {
     "type": ";",
-    "named": false
-  },
-  {
-    "type": "<",
     "named": false
   },
   {
@@ -6625,35 +6497,7 @@
     "named": false
   },
   {
-    "type": "=!",
-    "named": false
-  },
-  {
-    "type": "=/=",
-    "named": false
-  },
-  {
-    "type": "=:=",
-    "named": false
-  },
-  {
-    "type": "=<",
-    "named": false
-  },
-  {
-    "type": "==",
-    "named": false
-  },
-  {
     "type": "=>",
-    "named": false
-  },
-  {
-    "type": ">",
-    "named": false
-  },
-  {
-    "type": ">=",
     "named": false
   },
   {
@@ -6681,18 +6525,6 @@
     "named": false
   },
   {
-    "type": "and",
-    "named": false
-  },
-  {
-    "type": "andalso",
-    "named": false
-  },
-  {
-    "type": "band",
-    "named": false
-  },
-  {
     "type": "begin",
     "named": false
   },
@@ -6705,31 +6537,15 @@
     "named": false
   },
   {
+    "type": "binary_op",
+    "named": true
+  },
+  {
     "type": "bits",
     "named": false
   },
   {
     "type": "bitstring",
-    "named": false
-  },
-  {
-    "type": "bnot",
-    "named": false
-  },
-  {
-    "type": "bor",
-    "named": false
-  },
-  {
-    "type": "bsl",
-    "named": false
-  },
-  {
-    "type": "bsr",
-    "named": false
-  },
-  {
-    "type": "bxor",
     "named": false
   },
   {
@@ -6751,10 +6567,6 @@
   {
     "type": "comment",
     "named": true
-  },
-  {
-    "type": "div",
-    "named": false
   },
   {
     "type": "end",
@@ -6801,10 +6613,6 @@
     "named": false
   },
   {
-    "type": "not",
-    "named": false
-  },
-  {
     "type": "of",
     "named": false
   },
@@ -6813,19 +6621,7 @@
     "named": false
   },
   {
-    "type": "or",
-    "named": false
-  },
-  {
-    "type": "orelse",
-    "named": false
-  },
-  {
     "type": "receive",
-    "named": false
-  },
-  {
-    "type": "rem",
     "named": false
   },
   {
@@ -6849,6 +6645,10 @@
     "named": false
   },
   {
+    "type": "unary_op",
+    "named": true
+  },
+  {
     "type": "unsigned",
     "named": false
   },
@@ -6870,10 +6670,6 @@
   },
   {
     "type": "when",
-    "named": false
-  },
-  {
-    "type": "xor",
     "named": false
   },
   {

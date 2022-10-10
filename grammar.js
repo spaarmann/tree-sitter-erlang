@@ -426,7 +426,7 @@ module.exports = grammar({
     _expr_operator_unary: ($) =>
       prec.right(
         PREC.UNARY_OP,
-        seq(field("operator", oneOf(OP1)), field("operand", $.expression))
+        seq(field("operator", alias(oneOf(OP1), $.unary_op)), field("operand", $.expression))
       ),
 
     _expr_operator_binary: ($) =>
@@ -435,7 +435,7 @@ module.exports = grammar({
           PREC.BINARY_OP,
           seq(
             field("lhs", $.expression),
-            field("operator", oneOf(OP2_LEFT_ASSOC)),
+            field("operator", alias(oneOf(OP2_LEFT_ASSOC), $.binary_op)),
             field("rhs", $.expression)
           )
         ),
@@ -443,7 +443,7 @@ module.exports = grammar({
           PREC.BINARY_OP,
           seq(
             field("lhs", $.expression),
-            field("operator", oneOf(OP2_RIGHT_ASSOC)),
+            field("operator", alias(oneOf(OP2_RIGHT_ASSOC), $.binary_op)),
             field("rhs", $.expression)
           )
         )
